@@ -12,6 +12,9 @@ RESET
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #232323;
   font-family: "Raleway", sans-serif;
@@ -27,6 +30,24 @@ ul {
 }
 a {
   text-decoration: none;
+}
+h2 {
+  color: #232323;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #232323;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+h4 {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
 }
 .container {
   width: 90%;
@@ -170,8 +191,124 @@ SECTION-1
   border: 1px solid #fff;
   border-radius: 2rem;
   border: 2px solid #fff;
+  transition: all 400ms ease;
 }
 .btn:hover {
+  color: rgb(20, 20, 161);
   background: transparent;
-  border-color: rgb(20, 20, 161);
+  border-color: currentColor;
+}
+
+/*=======================================
+ABOUT
+=======================================*/
+.section-pd {
+  padding: 100px 0;
+}
+.section-center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#about h4,
+#about p {
+  margin-bottom: 2.5rem;
+}
+details {
+  margin-bottom: 1rem;
+  transition: all 400ms ease;
+}
+details summary {
+  color: #232323;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details summary::after {
+  content: "\25bc";
+  font-size: 1.5rem;
+  float: right;
+  transition: all 400ms ease;
+}
+#about details p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  background-color: #bfeaf5;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+details[open] summary,
+details summary:hover {
+  background: #bfeaf5;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+details[open] summary ~ * {
+  animation: sweep 800ms ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+/*=======================================
+DEPARTMENTS
+=======================================*/
+#departments {
+  background-color: #bfeaf5;
+  padding: 6.25rem 0;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title {
+  color: #232323;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.section-header p {
+  text-transform: uppercase;
+}
+#departments .cards {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  color: #232323;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.department-icon {
+  color: #25ced1;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+#departments p {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
