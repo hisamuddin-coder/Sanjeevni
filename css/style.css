@@ -16,101 +16,139 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: #232323;
+  color: #323232;
+  background-color: #fff;
+  font-weight: 300;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  background-color: #f2f2f2;
+  letter-spacing: 1px;
 }
 img {
   display: block;
   width: 100%;
 }
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 a {
   text-decoration: none;
 }
+p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+h1 {
+  color: #181616;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
 h2 {
-  color: #232323;
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
 }
 h3 {
-  color: #232323;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 0.625rem;
 }
 h4 {
-  color: #232323;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1.25px;
-  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 h6 {
-  color: #232323;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 0.875rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1.25px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .container {
-  width: 90%;
+  width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
+}
+.section-pd {
+  padding: 6.25rem 0;
+}
+.section-bg {
+  background-color: #f3f3f3;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.section-center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.btn {
+  display: inline-block;
+  color: #181616;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1.5px solid #fff;
+  border-radius: 2rem;
+  transition: all 400ms ease;
+}
+.btn-solid {
+  background-color: #25ced1;
+  border-color: #25ced1;
+}
+.btn-solid:hover {
+  background-color: #fff;
+}
+.btn:hover {
+  border-color: #0aa0f6;
 }
 /*=======================================
 NAVBAR
 =======================================*/
 #header {
-  background-color: #fff;
   position: fixed;
+  background-color: #fff;
   width: 100%;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
   z-index: 9;
 }
 .nav {
-  height: 80px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 70px;
 }
 .logo {
-  color: #232323;
-  font-size: 1.2rem;
+  color: #181616;
+  font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25em;
 }
-.logo-icon {
+.logo span {
   color: #25ced1;
   font-size: 1.5em;
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
 .nav-link {
-  color: #232323;
-  font-size: 13px;
+  color: #181616;
+  font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: 1.25px;
   text-decoration: none;
   text-transform: uppercase;
 }
 .nav-link:hover {
-  color: rgba(35, 35, 35, 0.8);
-}
-.nav-link:active {
-  color: rgba(35, 35, 35, 0.9);
+  color: rgba(24, 22, 22, 0.8);
 }
 /*=======================================
 HERO SECTION
@@ -120,24 +158,11 @@ HERO SECTION
   background-size: cover;
   background-position: 150px -280px;
 }
-.hero-text {
+.hero-content {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.hero-title {
-  color: #232323;
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-.hero-description {
-  color: #232323;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
 }
 /*=======================================
 SECTION-1
@@ -147,94 +172,52 @@ SECTION-1
   top: -60px;
 }
 .cards {
-  display: flex;
-  justify-content: center;
+  gap: 0;
+  align-items: initial;
 }
 .card {
   width: 100%;
-  padding: 5rem;
   background-color: #bfeaf5;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px 5px hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+  padding: 5rem 2.5rem;
+}
+.card-header {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+.card-body {
+  margin-bottom: 5rem;
 }
 .card.active {
   background-color: #def6ff;
-  transform: scale(1, 1.1);
+  transform: scaleY(1.1);
 }
-.card .phone-no,
-.card-icon,
-.card-title {
-  color: rgb(20, 20, 161);
-  margin-bottom: 1.5rem;
-  font-weight: 500;
+#section-01 .card {
+  border-radius: 0.5rem;
 }
-.card .phone-no {
-  display: block;
-  font-size: 1.4rem;
+#section-01 .card .card-header {
+  color: #0aa0f6;
+  border-radius: 0.5rem;
 }
-.card-icon {
-  font-size: 3rem;
-}
-.card-title {
-  color: #232323;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-}
-.card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #232323;
-  margin-bottom: 3rem;
-}
-.btn {
-  color: #232323;
-  background-color: #fff;
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  padding: 1rem 2rem;
-  border: 1px solid #fff;
-  border-radius: 2rem;
-  border: 2px solid #fff;
-  transition: all 400ms ease;
-}
-.btn:hover {
-  color: rgb(20, 20, 161);
-  background: transparent;
-  border-color: currentColor;
-}
-
 /*=======================================
 ABOUT
 =======================================*/
-.section-pd {
-  padding: 100px 0;
+#about .section-header {
+  text-align: left;
 }
-.section-center {
-  display: grid;
+#about .section-center {
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-#about h4,
-#about p {
-  margin-bottom: 2.5rem;
 }
 details {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   transition: all 400ms ease;
 }
 details summary {
-  color: #232323;
-  background-color: #fff;
+  color: #464545;
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 1.25rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
   list-style: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -242,114 +225,64 @@ details summary {
 details summary::after {
   content: "\25bc";
   font-size: 1.5rem;
-  float: right;
   transition: all 400ms ease;
 }
-#about details p {
-  font-size: 0.95rem;
-  margin-bottom: 0;
-  background-color: #bfeaf5;
-  padding: 0 1.5rem 1.25rem 1.5rem;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-details[open] summary,
-details summary:hover {
-  background: #bfeaf5;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 details[open] summary::after {
   transform: rotate(-180deg);
 }
-details[open] summary ~ * {
-  animation: sweep 800ms ease-in-out;
+details p {
+  padding: 0 1.5rem 1.25rem 1.5rem;
 }
-@keyframes sweep {
-  0% {
-    opacity: 0;
-    margin-top: -10px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0px;
-  }
+#about details summary {
+  background-color: #fff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+}
+#about details p {
+  background-color: #bfeaf5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#about details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#about details summary:hover {
+  background: #bfeaf5;
 }
 /*=======================================
 DEPARTMENTS
 =======================================*/
 #departments {
   background-color: #bfeaf5;
-  padding: 6.25rem 0;
 }
-.section-header {
-  text-align: center;
-  margin-bottom: 3rem;
+#departments .section-center {
+  gap: 3.5rem 2rem;
 }
-.section-title {
-  color: #232323;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.section-header p {
-  text-transform: uppercase;
-}
-#departments .cards {
-  background-color: #fff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 2rem;
-  padding: 5rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
-}
-h3 {
-  color: #232323;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.department-icon {
-  color: #25ced1;
-  font-size: 2rem;
-  margin-bottom: 1.25rem;
-}
-#departments p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+#departments .card-header {
+  color: #0aa0f6;
 }
 /*=======================================
 TESTIMONIAL
 =======================================*/
-.wrapper {
-  display: grid;
+#testimonial .section-header {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+#testimonial .section-center {
   grid-template-columns: repeat(2, 1fr);
-  justify-content: flex-start;
-  gap: 2rem;
+  padding: 0 6.25rem;
+  gap: 5rem;
 }
-#testimonial {
-  padding: 5rem 6.5rem;
+.department-items {
   background-color: #fff;
-}
-#testimonial .btn {
-  background: green;
-  color: #fff;
-}
-
-#testimonial p strong {
-  letter-spacing: 1.5;
-  line-height: 1.3;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 #testimonial p {
+  text-align: left;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #333;
-  letter-spacing: 0.5px;
 }
 .testimonial-img img {
   height: 380px;
@@ -365,16 +298,15 @@ STATS
 }
 .box {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 .count {
-  color: #232323;
   font-size: 4.5rem;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .bar {
   width: 50px;
@@ -382,83 +314,96 @@ STATS
   background-color: #25ced1;
   margin-bottom: 10px;
 }
-.bg-color {
+/*=======================================
+OFFERS
+=======================================*/
+#offers {
+  background-image: url(https://images.pexels.com/photos/7722797/pexels-photo-7722797.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#offers .section-header {
+  margin-bottom: 5rem;
+}
+.offer-card {
+  text-align: center;
+}
+.offer-card.active {
   background-color: #fff;
+}
+.offer-card ul li {
+  margin-bottom: 1rem;
+}
+/*=======================================
+FAQ
+=======================================*/
+#faq .section-center {
+  grid-template-columns: repeat(2, 1fr);
+}
+#faq details summary {
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.25rem;
+}
+#faq details summary {
+  color: #5a5a5a;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+#faq details[open] summary {
+  background-color: #f1f1f1;
+}
+#faq details summary::after {
+  font-size: 1rem;
+  transition: all 400ms ease;
 }
 /*=======================================
 CTA
 =======================================*/
-#cta {
-  background-color: #fff;
-}
-#cta .section-center {
-  grid-template-columns: repeat(4, 1fr);
-}
-.cta-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+#cta .flex-center {
+  gap: 1rem;
 }
 .cta-icon {
   color: #25ced1;
-  font-size: 3rem;
+  font-size: 1.75rem;
 }
-h5 {
-  color: #232323;
-  font-size: 1.3rem;
-}
-.cta-box span {
-  font-size: 14px;
-}
-
-.contact-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+.cta-item span,
+.cta-item address {
+  font-size: 0.75rem;
 }
 /*=======================================
 FOOTER
 =======================================*/
-.footer-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
 #footer {
-  background-color: #181616;
-}
-#footer h2 {
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  padding: 2.5rem 0;
+  background-color: #1c1c1c;
 }
-#footer p {
-  color: #f7f7f7;
-  font-size: 14px;
-  line-height: 2;
+#footer h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
 }
 .news {
   display: flex;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 .news img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
-.new-info h5 {
+#footer ul li {
+  margin-bottom: 0.675rem;
+}
+#site-footer {
+  background-color: #2c2929;
+}
+.copyright {
   color: #fff;
-}
-
-.footer-cta {
-  color: #fff;
-}
-.footer-cta {
-  margin-bottom: 1rem;
-}
-.footer-cta span {
-  margin-right: 10px;
+  font-size: 0.75rem;
+  padding: 1rem;
+  text-align: center;
 }

@@ -18,14 +18,14 @@
   <body>
     <header id="header">
       <div class="container">
-        <nav class="nav">
+        <nav class="nav flex-center">
           <a href="#" class="logo">
             <span class="logo-icon"
-              ><i class="fa-solid fa-house-medical"></i
-            ></span>
-            <span class="logo-text">Sanjeevni</span>
+              ><i class="fa-solid fa-house-medical"></i>
+            </span>
+            Sanjeevni
           </a>
-          <ul class="nav-links">
+          <ul class="nav-links flex-center">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#departments" class="nav-link">Deparments</a></li>
@@ -39,53 +39,61 @@
       <!------ HERO SECTION ------>
       <section id="hero" class="section">
         <div class="container">
-          <div class="hero-text">
+          <div class="hero-content">
             <h1 class="hero-title">Professional <br />Family Health Care</h1>
-            <p class="hero-description">Lorem ipsum dolor sit amet.</p>
+            <h6 class="hero-description">Lorem ipsum dolor sit amet.</h6>
           </div>
         </div>
       </section>
       <!------ SECTION-01 ------>
       <section id="section-01">
         <div class="container">
-          <div class="cards">
-            <!--card-01-->
+          <div class="cards flex-center">
             <div class="card">
-              <span class="phone-no">999-9999-999</span>
-              <h3 class="card-title">Emergency Service</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Obcaecati, quidem?
-              </p>
+              <div class="card-header">
+                <span class="phone-no">999-9999-999</span>
+              </div>
+              <div class="card-body">
+                <h3>Emergency Service</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolores minima facilis ipsam illo iusto atque natus accusamus
+                  et perspiciatis qui id.
+                </p>
+              </div>
               <a href="#" class="btn">See more</a>
             </div>
-            <!--card-02-->
+
             <div class="card active">
-              <div class="card-icon">
+              <div class="card-header">
                 <i class="fa-sharp fa-regular fa-calendar-check"></i>
               </div>
-              <h3 class="card-title">Do you want to make an appointment</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                reprehenderit ratione dicta quidem ullam ad.
-              </p>
+              <div class="card-body">
+                <h3>Do you want to make an appointment</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores reprehenderit ratione dicta quidem ullam ad.
+                </p>
+              </div>
               <a href="#" class="btn">Book Now</a>
             </div>
-            <!--card-03-->
+
             <div class="card">
-              <div class="card-icon">
+              <div class="card-header">
                 <i class="fa-sharp fa-regular fa-clock"></i>
               </div>
-              <h3 class="card-title">Opening hours</h3>
-              <p>Monday-Friday</p>
-              <p>Saturday-Sunday</p>
+              <div class="card-body">
+                <h3>Opening hours</h3>
+                <p>Mon.-Fri. <span>10am - 19pm</span></p>
+                <p>Sat.-Sun. <span>11am - 17pm</span></p>
+              </div>
               <a href="#" class="btn">Contact Us</a>
             </div>
           </div>
         </div>
       </section>
       <!------ ABOUT SECTION ------>
-      <section id="about" class="section-pd">
+      <section id="about" class="section-pd section-bg">
         <div class="container">
           <div class="section-center">
             <div class="about-img">
@@ -96,16 +104,16 @@
               />
             </div>
             <div class="about-desc">
-              <h2 class="about-heading">
-                <strong>About </strong>Jevelin Clinic
-              </h2>
-              <h6>Professional Care</h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                orci ex, pulvinar nec finibus ut, cursus eget libero. In dictum
-                sem non sapien condimentum aliquet. Nulla facilisi. Mauris
-                efficitur dolor dolor, id porta nulla interdum vitae
-              </p>
+              <div class="section-header">
+                <h2>About <small>Jevelin Clinic</small></h2>
+                <h6>Professional Care</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus orci ex, pulvinar nec finibus ut, cursus eget libero.
+                  In dictum sem non sapien condimentum aliquet. Nulla facilisi.
+                  Mauris efficitur dolor dolor, id porta nulla interdum vitae
+                </p>
+              </div>
               <details class="tab">
                 <summary class="tab-heading">Medical Consulting</summary>
                 <p>
@@ -138,15 +146,15 @@
         </div>
       </section>
       <!------ DEPARTMENTS SECTION ------>
-      <section id="departments">
+      <section id="departments" class="section-pd">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">How we can help you</h2>
-            <p>Read more about our services</p>
+            <h6>Read more about our services</h6>
           </div>
-          <div class="cards department-cards">
-            <div class="department-card">
-              <div class="department-icon">
+          <div class="section-center department-items">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-eye"></i>
               </div>
               <h3>Opthtalmology</h3>
@@ -156,8 +164,8 @@
                 feugiat
               </p>
             </div>
-            <div class="service-detail">
-              <div class="department-icon">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-flask-vial"></i>
               </div>
               <h3>Laboratory</h3>
@@ -167,8 +175,8 @@
                 feugiat
               </p>
             </div>
-            <div class="service-detail">
-              <div class="department-icon">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-heart-circle-plus"></i>
               </div>
               <h3>Cardiology</h3>
@@ -178,8 +186,8 @@
                 feugiat
               </p>
             </div>
-            <div class="service-detail">
-              <div class="department-icon">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-person-breastfeeding"></i>
               </div>
               <h3>Pediatrics</h3>
@@ -189,8 +197,8 @@
                 feugiat
               </p>
             </div>
-            <div class="service-detail">
-              <div class="department-icon">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-teeth-open"></i>
               </div>
               <h3>Dentistry</h3>
@@ -200,8 +208,8 @@
                 feugiat
               </p>
             </div>
-            <div class="service-detail">
-              <div class="department-icon">
+            <div class="department-item">
+              <div class="card-header">
                 <i class="fa-solid fa-x-ray"></i>
               </div>
               <h3>Radiology</h3>
@@ -217,24 +225,26 @@
       <!------ TESTIMONIAL SECTION ------>
       <section id="testimonial" class="section-pd">
         <div class="container">
-          <div class="wrapper">
+          <div class="section-center">
             <div class="testimonial-desc">
-              <h2><strong>Jenna</strong>Berg</h2>
-              <h6>professional dentist</h6>
-              <p>
-                <strong
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus orci ex, pulvinar nec finibus ut, cursus eget libero.
-                  In dictum sem</strong
-                >
-              </p>
+              <div class="section-header">
+                <h2>Jenna<small>Berg</small></h2>
+                <h6>professional dentist</h6>
+                <span>
+                  <strong
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus orci ex, pulvinar nec finibus ut, cursus eget
+                    libero. In dictum sem</strong
+                  >
+                </span>
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 orci ex, pulvinar nec finibus ut, cursus eget libero. In dictum
                 sem non sapien condimentum aliquet. Nulla facilisi. Mauris
                 efficitur dolor dolor, id porta nulla interdum vitae.
               </p>
-              <a href="#" class="btn">View all Doctors</a>
+              <a href="#" class="btn btn-solid">View all Doctors</a>
             </div>
             <figure class="testimonial-img">
               <img src="images/testimonial-img.jpg" alt="docter" />
@@ -244,7 +254,7 @@
         </div>
       </section>
       <!------ STATS SECTION ------>
-      <section id="stats" class="section-pd">
+      <section id="stats" class="section-pd section-bg">
         <div class="container">
           <div class="section-center">
             <div class="box">
@@ -254,19 +264,19 @@
             </div>
 
             <div class="box">
-              <span class="count">53</span>
+              <span class="count">12</span>
               <div class="bar"></div>
               <h4>Certified <br /><small>Doctors</small></h4>
             </div>
 
             <div class="box">
-              <span class="count">53</span>
+              <span class="count">57</span>
               <div class="bar"></div>
               <h4>Certified <br /><small>Doctors</small></h4>
             </div>
 
             <div class="box">
-              <span class="count">53</span>
+              <span class="count">22</span>
               <div class="bar"></div>
               <h4>Certified <br /><small>Doctors</small></h4>
             </div>
@@ -280,50 +290,65 @@
             <h2 class="section-title">Our Special Offers</h2>
             <h6>Start to be healthy today</h6>
           </div>
-
-          <div class="cards">
-            <!--card-01-->
-            <div class="card">
-              <h3>Allergy Check</h3>
-              <h3>$ <span>255</span></h3>
-              <ul>
-                <li><a href="#">Allergy Test</a></li>
-                <li><a href="#">Consultation</a></li>
-                <li><a href="#">Treatments</a></li>
-                <li><a href="#">10 Procedures</a></li>
-                <li><a href="#">svg</a></li>
-                <li><a href="#">Test Results</a></li>
-              </ul>
+          <div class="cards flex-center">
+            <div class="card offer-card">
+              <div class="card-header">
+                <h3>Allergy Check</h3>
+                <div class="price">
+                  <span>$</span><span class="count">255</span>
+                </div>
+                <p><em>10 treatments</em></p>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Allergy Test</li>
+                  <li>Consultation</li>
+                  <li>Treatments</li>
+                  <li>10 Procedures</li>
+                  <li>X</li>
+                  <li>Test Results</li>
+                </ul>
+              </div>
               <a href="#" class="btn">Get Now</a>
             </div>
-            <!--card-02-->
-            <div class="card active">
-              <h3>Eye Checkup</h3>
-              <h3>$ <span>108</span></h3>
-              <p>3 treatments</p>
-              <ul>
-                <li><a href="#">Refraction</a></li>
-                <li><a href="#">Retinal Examination</a></li>
-                <li><a href="#">External Examination</a></li>
-                <li><a href="#">9 Procedures</a></li>
-                <li><a href="#">svg</a></li>
-                <li><a href="#">Full Closure</a></li>
-              </ul>
-              <a href="#" class="btn">Get Now</a>
+            <div class="card offer-card active">
+              <div class="card-header">
+                <h3>Allergy Check</h3>
+                <div class="price">
+                  <span>$</span><span class="count">255</span>
+                </div>
+                <p><em>10 treatments</em></p>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Allergy Test</li>
+                  <li>Consultation</li>
+                  <li>Treatments</li>
+                  <li>10 Procedures</li>
+                  <li>X</li>
+                  <li>Test Results</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-solid">Get Now</a>
             </div>
-            <!--card-03-->
-            <div class="card">
-              <h3>Dental Care</h3>
-              <h3>$ <span>320</span></h3>
-              <p>6 treatments</p>
-              <ul>
-                <li><a href="#">Gum Care</a></li>
-                <li><a href="#">Consultation</a></li>
-                <li><a href="#">Treatments</a></li>
-                <li><a href="#">6 Procedures</a></li>
-                <li><a href="#">Oral Hygiene</a></li>
-                <li><a href="#">Full Closure</a></li>
-              </ul>
+            <div class="card offer-card">
+              <div class="card-header">
+                <h3>Allergy Check</h3>
+                <div class="price">
+                  <span>$</span><span class="count">255</span>
+                </div>
+                <p><em>10 treatments</em></p>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Allergy Test</li>
+                  <li>Consultation</li>
+                  <li>Treatments</li>
+                  <li>10 Procedures</li>
+                  <li>X</li>
+                  <li>Test Results</li>
+                </ul>
+              </div>
               <a href="#" class="btn">Get Now</a>
             </div>
           </div>
@@ -333,53 +358,45 @@
       <section id="faq" class="section-pd">
         <div class="container">
           <div class="section-center">
-            <div>
+            <div class="col-left">
               <h2>Freequently Ask Questions</h2>
-              <a href="#" class="btn">View All</a>
+              <a href="#" class="btn btn-solid">View All</a>
             </div>
-            <div>
-              <details class="tab">
-                <summary class="tab-heading">
-                  How to make an appointment?
-                </summary>
+            <div class="col-right">
+              <details>
+                <summary>How to make an appointment?</summary>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  pharetra, urna non pellentesque sollicitudin, felis lorem
-                  porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam
-                  tristique ornare lorem at
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus tempore deserunt voluptatem itaque totam eaque
+                  consequatur provident assumenda cumque? Neque expedita
+                  consectetur dolor soluta minima!
                 </p>
               </details>
-              <details class="tab">
-                <summary class="tab-heading">
-                  What will my insurance cover for me?
-                </summary>
+              <details>
+                <summary>What will my insurance cover for me?</summary>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  pharetra, urna non pellentesque sollicitudin, felis lorem
-                  porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam
-                  tristique ornare lorem at
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus tempore deserunt voluptatem itaque totam eaque
+                  consequatur provident assumenda cumque? Neque expedita
+                  consectetur dolor soluta minima!
                 </p>
               </details>
-              <details class="tab">
-                <summary class="tab-heading">
-                  Is there a parking place next to the Clinic?
-                </summary>
+              <details>
+                <summary>Is there a parking place next to the Clinic?</summary>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  pharetra, urna non pellentesque sollicitudin, felis lorem
-                  porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam
-                  tristique ornare lorem at
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus tempore deserunt voluptatem itaque totam eaque
+                  consequatur provident assumenda cumque? Neque expedita
+                  consectetur dolor soluta minima!
                 </p>
               </details>
-              <details class="tab">
-                <summary class="tab-heading">
-                  How can I make a home appointment?
-                </summary>
+              <details>
+                <summary>How can I make a home appointment?</summary>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  pharetra, urna non pellentesque sollicitudin, felis lorem
-                  porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam
-                  tristique ornare lorem at
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus tempore deserunt voluptatem itaque totam eaque
+                  consequatur provident assumenda cumque? Neque expedita
+                  consectetur dolor soluta minima!
                 </p>
               </details>
             </div>
@@ -387,37 +404,40 @@
         </div>
       </section>
       <!------ CTA SECTION ------>
-      <section id="cta" class="section-pd">
+      <section id="cta" class="section-pd section-bg">
         <div class="container">
-          <div class="section-center">
-            <div class="cta-box">
+          <div class="cta-items flex-center">
+            <div class="cta-item flex-center">
               <div class="cta-icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <div class="cta-des">
+              <div class="cta-desc">
                 <h5>Address</h5>
-                <span>Street number 5, Town, Country</span>
+                <address>Street No.22, Canought Place, Delhi</address>
               </div>
             </div>
-            <div class="cta-box">
+
+            <div class="cta-item flex-center">
               <div class="cta-icon">
                 <i class="fa-regular fa-clock"></i>
               </div>
-              <div class="cta-des">
+              <div class="cta-desc">
                 <h5>Work Hours</h5>
-                <span>Monday-Friday</span><span>11am - 19pm</span>
+                <span>Mon.-Fri.</span> <span>11am - 19pm</span>
               </div>
             </div>
-            <div class="cta-box">
+
+            <div class="cta-item flex-center">
               <div class="cta-icon">
                 <i class="fa-regular fa-envelope"></i>
               </div>
-              <div class="cta-des">
-                <h5>Email</h5>
+              <div class="cta-desc">
+                <h5>E-mail</h5>
                 <span>Brand@company.com</span>
               </div>
             </div>
-            <div class="cta-box">
+
+            <div class="cta-item flex-center">
               <div class="cta-icon">
                 <i class="fa-solid fa-phone"></i>
               </div>
@@ -429,54 +449,22 @@
           </div>
         </div>
       </section>
-
-      <!-- <section id="contacts" class="section-pd">
-        <div class="contact-wrapper">
-          <div class="col-left">
-            <img src="" alt="" />
-          </div>
-          <div class="col-right">
-            <h2>Make An Appointment</h2>
-            <h6>and we will contact you</h6>
-            <form action="#" class="form" method="post">
-              <input type="text" placeholder="Full Name" class="form-input" />
-              <input type="text" placeholder="Email" class="form-input" />
-              <input type="tel" placeholder="phone" class="form-input" />
-              <input type="date" class="form-input" />
-              <select
-                name="select"
-                id="select"
-                class="form-input"
-                aria-placeholder="select"
-              >
-                <option value="opthtalmology">Opthtalmology</option>
-                <option value="cardiology">Cardiology</option>
-                <option value="dentistry">Dentistry</option>
-                <option value="laboratory">Laboratory</option>
-                <option value="pediatrics">Pediatrics</option>
-                <option value="rediology">Radiology</option>
-              </select>
-              <input type="submit" class="btn" placeholder="Book Now" />
-            </form>
-          </div>
-        </div>
-      </section> -->
     </main>
-
     <footer>
-      <section id="footer" class="section-pd">
+      <section id="footer">
         <div class="container">
-          <div class="footer-wrapper">
+          <div class="section-center">
             <div class="footer-col">
-              <h2 class="footer-heading">Important information</h2>
+              <h3>Important information</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                eos, deleniti corporis id velit beatae dolores laborum eum
-                assumenda sapiente?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat consequatur provident dignissimos porro. Harum sint
+                quisquam in, doloribus labore asperiores doloremque quis dolorum
+                quo? Rerum laborum quaerat hic optio quisquam!
               </p>
             </div>
             <div class="footer-col">
-              <h2 class="footer-heading">Latest News</h2>
+              <h3>Latest News</h3>
               <figure class="news">
                 <img
                   src="https://images.pexels.com/photos/3873178/pexels-photo-3873178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -494,30 +482,36 @@
                 />
                 <figcaption class="new-info">
                   <h5>News</h5>
-                  <p>Welcome to our new Building</p>
+                  <p><strong> Welcome to our new Building</strong></p>
                 </figcaption>
               </figure>
             </div>
             <div class="footer-col">
-              <div class="footer-cta">
-                <i class="fa-regular fa-map"></i>
-                <span>Street no 5 town Country</span>
-              </div>
-              <div class="footer-cta">
-                <i class="fa-solid fa-phone"></i>
-                <span>999 9999 999</span>
-              </div>
-              <div class="footer-cta">
-                <i class="fa-solid fa-envelope"></i>
-                <span>sanjeevni@mycompany.com</span>
-              </div>
-              <div class="footer-cta">
-                <i class="fa-regular fa-clock"></i>
-                <span>Mon-Fri</span>
-                <span>11am - 19am</span>
-              </div>
+              <ul>
+                <li>
+                  <span><i class="fa-regular fa-map"></i></span>
+                  <span>Street no 5 town Country</span>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-phone"></i></span>
+                  <span>999 9999 999</span>
+                </li>
+                <li>
+                  <span> <i class="fa-solid fa-envelope"></i></span>
+                  <span>sanjeevni@mycompany.com</span>
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-clock"></i></span>
+                  <span>Mon-Fri 11am - 19pm</span>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="site-footer">
+        <div class="container">
+          <p class="copyright">&#169; 2024 Sanjeevni. All rights reserved.</p>
         </div>
       </section>
     </footer>
