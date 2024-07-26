@@ -19,18 +19,18 @@
     <header id="header">
       <div class="container">
         <nav class="nav flex-center">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <span class="logo-icon"
               ><i class="fa-solid fa-house-medical"></i>
             </span>
             Sanjeevni
           </a>
           <ul class="nav-links flex-center">
-            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#hero" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#departments" class="nav-link">Deparments</a></li>
-            <li><a href="#" class="nav-link">FAQ</a></li>
-            <li><a href="#" class="nav-link">Contacts</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -445,6 +445,65 @@
                 <h5>Telephone</h5>
                 <span>999 9999 999</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------ CTA-2 SECTION ------>
+      <section id="contacts" class="section-pd">
+        <div class="container">
+          <div class="section-center">
+            <div class="col-left">
+              <img
+                src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt=""
+              />
+            </div>
+            <div class="col-left">
+              <div class="section-header">
+                <h2>Make an Appointment</h2>
+                <h6>And we will contact you</h6>
+              </div>
+              <form action="#" method="post" class="form">
+                <input
+                  type="text"
+                  name="full name"
+                  id="fname"
+                  placeholder="Full Name"
+                  class="form-input"
+                />
+                <input
+                  type="text"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  id="email"
+                  placeholder="Email"
+                  class="form-input"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  id="phone"
+                  placeholder="Phone"
+                  class="form-input"
+                />
+                <input type="date" class="form-input" />
+                <select name="select" id="select" class="form-input">
+                  <option value="">Select</option>
+                  <option value="ophthalomology">Ophthalomology</option>
+                  <option value="cardiology">Cardiology</option>
+                  <option value="dentistry">Dentistry</option>
+                  <option value="lavoratory">Laboratory</option>
+                  <option value="pediatrics">Pediatrics</option>
+                  <option value="radiology">Radiology</option>
+                </select>
+                <input
+                  type="submit"
+                  class="btn btn-solid"
+                  placeholder="Book Now"
+                  id=""
+                />
+              </form>
             </div>
           </div>
         </div>
